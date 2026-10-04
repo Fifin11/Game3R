@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game3R</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Game<span class="g3r-gradient">3</span>R</a>
+        <ul class="nav">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Games">Games</a></li>
+            <li><a href="#Forum">Forum</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchbox">
+                <a href="#"><i class='bx  bx-search'></i></a>
+                <input type="text" id="game-search" placeholder="   Search games......">
+            </div>
+        </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+
+        <!-- Profile section start -->
+        <div class="profile-section">
+            <img src="img/profile-avatar.png" alt="Profile" class="profile-avatar">
+            <span class="profile-name">fifin119</span>
+            <div class="profile-dropdown">
+                <ul>
+                    <li><a href="#"><i class='bx bx-user'></i> My Profile</a></li>
+                    <li><a href="#"><i class='bx bx-cog'></i> Settings</a></li>
+                    <li><a href="#"><i class='bx bx-log-out'></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <!-- landing eka -->
+    <div class="banner" id="Home">
+        <div class="bg">
+            <div class="content home-content">
+                <h2> Ultimate Gaming Experience;<br>
+                    Cheaper?</h2>
+                <p>
+                    <span class="highlight">Looking for the best discounts</span> on your favorite games? <span
+                        class="accent">Game<span class="g3r-gradient">3</span>R</span> brings you the hottest deals,
+                    free offers, and wallet-friendly
+                    prices across top stores — all in one place.<br>
+                    <br>
+                    <span class="accent">Save big, play more</span>, and never miss a bargain again!<br>
+                    <span class="final">Your next adventure is just a click away.</span>
+                </p>
+                <a href="#Games" class="btn">Explore Now</a>
+            </div>
+            <img src="img/bandedn.png" alt="Gaming Banner">
+        </div>
+    </div>
+
+
+    <!-- About -->
+    <div class="about" id="About">
+        <div class="contentbox">
+            <h2>About Us</h2>
+            <p class="about-desc">
+                <span class="highlight">Game<span class="g3r-gradient">3</span>R</span> is your ultimate destination for
+                discovering the <span class="accent">best deals</span> on games.<br>
+                We aggregate offers from a wide range of <span class="highlight">trusted digital game stores</span>,
+                ensuring you never miss out on a great bargain.<br>
+                Whether you’re hunting for <span class="accent">limited-time discounts</span>, <span
+                    class="accent">exclusive bundles</span>, <span class="accent">seasonal sales</span>, or <span
+                    class="accent">free game giveaways</span>, Game<span class="g3r-gradient">3</span>R has everything
+                you need — all in one place.<br>
+                <br>
+                Our platform is designed to <span class="highlight">simplify your gaming experience</span>, making it
+                easier than ever to find the best prices without the hassle of navigating multiple websites or missing
+                out on time-sensitive offers.<br>
+                <span class="mission">Our mission is simple:</span> to help gamers <span class="accent">save
+                    money</span> without sacrificing the thrill of discovering new titles.<br>
+                We continuously <span class="highlight">track and update prices</span> across platforms, giving you
+                <span class="accent">real-time access</span> to the most wallet-friendly options available.<br>
+                <br>
+                From <span class="highlight">AAA blockbusters</span> to <span class="highlight">indie gems</span>,
+                Game<span class="g3r-gradient">3</span>R is your go-to hub for <span class="accent">smart,
+                    budget-conscious gaming</span>.<br>
+                <span class="final">No more jumping between sites or waiting for notifications</span> — with Game<span
+                    class="g3r-gradient">3</span>R, the
+                <span class="accent">best deal</span> is always just a click away.
+            </p>
+            <a href="#">Read more</a>
+        </div>
+        <img src="img/aboutga.png" alt="About Game3R">
+    </div>
+
+    <!--Games tika-->
+
+    <div class="games" id="Games">
+        <h2>Popular Games</h2>
+        <ul>
+            <li class="list active" data-filter="All">All</li>
+            <li class="list" data-filter="PC">PC Games</li>
+            <li class="list" data-filter="Mobile">Mobile Games</li>
+        </ul>
+        <div class="cardbox">
+            <div class="card" data-item="PC">
+                <img src="img/game1.avif" alt="Game 1">
+                <div class="content">
+                    <h4>Grand Theft Auto V</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>19.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game2.avif" alt="Game 2">
+                <div class="content">
+                    <h4>Hogwarts Legacy</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>59.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game3.avif" alt="Game 3">
+                <div class="content">
+                    <h4>Marvel's Spider-Man Remastered</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>59.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game4.avif" alt="Game 4">
+                <div class="content">
+                    <h4>Borderlands 3</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>29.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game5.avif" alt="Game 5">
+                <div class="content">
+                    <h4>Clair Obscur: Expedition 33</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>34.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game6.avif" alt="Game 6">
+                <div class="content">
+                    <h4>STAR WARS™ Battlefront™ II: Celebration Edition</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>39.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="Mobile">
+                <img src="img/game7.avif" alt="Game 7">
+                <div class="content">
+                    <h4>PUBG: BATTLEGROUNDS</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>Free</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="Mobile">
+                <img src="img/game8.avif" alt="Game 8">
+                <div class="content">
+                    <h4>Lords Mobile</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>Free</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game10.avif" alt="Game 10">
+                <div class="content">
+                    <h4>Days Gone</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>19.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game11.avif" alt="Game 11">
+                <div class="content">
+                    <h4>Dying Light: Standard Edition</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>13.36$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game12.avif" alt="Game 12">
+                <div class="content">
+                    <h4>The Last of Us™ Part II Remastered</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>49.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game13.avif" alt="Game 13">
+                <div class="content">
+                    <h4>Marvel’s Spider-Man 2</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>59.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game14.avif" alt="Game 14">
+                <div class="content">
+                    <h4>Infinity Nikki</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>19.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game15.avif" alt="Game 15">
+                <div class="content">
+                    <h4>World War II City Rebirth Tycoon</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>4.69$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game16.avif" alt="Game 16">
+                <div class="content">
+                    <h4>VALORANT</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>Free</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game17.avif" alt="Game 17">
+                <div class="content">
+                    <h4>Marvel Rivals</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>Free</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game18.avif" alt="Game 18">
+                <div class="content">
+                    <h4>SMITE 2</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>Free</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game19.avif" alt="Game 19">
+                <div class="content">
+                    <h4>EBOLA VILLAGE</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>6.54$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game20.avif" alt="Game 20">
+                <div class="content">
+                    <h4>Red Dead Redemption 2</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>59.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game21.avif" alt="Game 21">
+                <div class="content">
+                    <h4>RoadCraft</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>29.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game22.avif" alt="Game 22">
+                <div class="content">
+                    <h4>JDM: Japanese Drift Master</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>16.29$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game23.avif" alt="Game 23">
+                <div class="content">
+                    <h4>Soulmask</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>14.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game24.avif" alt="Game 24">
+                <div class="content">
+                    <h4>Dead by Daylight - Resident Evil Chapter</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>6.29$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game25.avif" alt="Game 25">
+                <div class="content">
+                    <h4>For The King</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>1.79$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game26.avif" alt="Game 26">
+                <div class="content">
+                    <h4>Dead by Daylight - Terror Expansion Pack</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>9.49$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game27.avif" alt="Game 27">
+                <div class="content">
+                    <h4>Kingdom Come: Deliverance II</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>44.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game28.avif" alt="Game 28">
+                <div class="content">
+                    <h4>Dying Light - Hellraid</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>3.05$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game29.avif" alt="Game 29">
+                <div class="content">
+                    <h4>FBC: Firebreak</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>18.59$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game30.avif" alt="Game 30">
+                <div class="content">
+                    <h4>WUCHANG: Fallen Feathers</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>34.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game31.avif" alt="Game 31">
+                <div class="content">
+                    <h4>The Land of Pain</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>1.39$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game32.avif" alt="Game 32">
+                <div class="content">
+                    <h4>Jurassic World Evolution 3</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>31.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game33.avif" alt="Game 33">
+                <div class="content">
+                    <h4>A Total War Saga: TROY</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>49.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game34.avif" alt="Game 34">
+                <div class="content">
+                    <h4>Hades II</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>14.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game35.avif" alt="Game 35">
+                <div class="content">
+                    <h4>Boxes: Lost Fragments</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>6.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game36.avif" alt="Game 36">
+                <div class="content">
+                    <h4>Dying Light: The Beast</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>44.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game37.avif" alt="Game 37">
+                <div class="content">
+                    <h4>Silent Hill</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>36.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game38.avif" alt="Game 38">
+                <div class="content">
+                    <h4>Still Wakes the Deep</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>8.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="PC">
+                <img src="img/game39.avif" alt="Game 39">
+                <div class="content">
+                    <h4>Mount & Blade II: Bannerlord</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>49.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="Mobile">
+                <img src="img/game40.avif" alt="Game 40">
+                <div class="content">
+                    <h4>Among Us</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>1.99$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="Mobile">
+                <img src="img/game41.avif" alt="Game 41">
+                <div class="content">
+                    <h4>Genshin Impact</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>Free</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="Mobile">
+                <img src="img/game42.avif" alt="Game 42">
+                <div class="content">
+                    <h4>Delta Force</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>Free</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="Mobile">
+                <img src="img/game43.avif" alt="Game 43">
+                <div class="content">
+                    <h4>Truck Sim 2025</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>4.69$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="Mobile">
+                <img src="img/game44.avif" alt="Game 44">
+                <div class="content">
+                    <h4>Arctico</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>0.93$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="Mobile">
+                <img src="img/game45.webp" alt="Game 45">
+                <div class="content">
+                    <h4>The Sims™ 4</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>Free</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="Mobile">
+                <img src="img/game46.avif" alt="Game 46">
+                <div class="content">
+                    <h4>Ogu and the Secret Forest</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>11.59$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="Mobile">
+                <img src="img/game47.avif" alt="Game 47">
+                <div class="content">
+                    <h4>Farming Simulator 25</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>36.49$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="Mobile">
+                <img src="img/game48.avif" alt="Game 48">
+                <div class="content">
+                    <h4>Melvor Idle</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>6.29$</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Forum hariya-->
+
+    <div class="forum" id="Forum">
+        <div class="contentbox">
+            <div class="box">
+                <img src="img/forumsig.jpg" alt="Forum Banner">
+                <div class="content">
+                    <h2>Join the <span>Discussion</span></h2>
+                    <h2>Watch <span>circuit:6 Tournament</span></h2>
+                    <p>Welcome to our gaming forum, where enthusiasts gather to share insights, strategies, and
+                        experiences.
+                        Whether you’re a seasoned gamer or just starting out, our community is here to help you level up
+                        your
+                        gaming journey. Join discussions on the latest game releases, share your favorite tips and
+                        tricks, or
+                        seek advice from fellow gamers. Dive into a world of gaming knowledge and camaraderie!</p>
+                    <div class="btn">
+                        <a href="#" class="Join">Join the Horde!</a>
+                        <a href="#" class="watch">Witness Madness!</a>
+                    </div>
+                </div>
+
+                <form class="login-form" id="forum-signup-form" action="#" method="get" style="margin-top: 2em;">
+                    <h3>Sign Up to the Forum</h3>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="8 minimum characters" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="temporary emails not accepted" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="use a strong password" required>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+                <script>
+                    document.getElementById('forum-signup-form').addEventListener('submit', function (event) {
+                        event.preventDefault();
+                        const email = document.getElementById('email').value;
+                        alert('Sign in instructions have been sent to ' + email);
+                        this.reset();
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!--anthima tika-->
+    <div class="contact" id="Contact">
+        <img src="img/contactpg.png" alt="Contact Us">
+        <div class="form">
+            <h1>Contact Us</h1>
+
+            <form id="contact-form">
+                <div class="inputbox">
+                    <p>Tell us who You are</p>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="inputbox">
+                    <p>How can we contact you?</p>
+                    <input type="email" id="contact-email" placeholder="Email" required>
+                </div>
+                <div class="inputbox">
+                    <p>What happened?</p>
+                    <textarea id="contact-message" placeholder="Begin typing here" required></textarea>
+                </div>
+                <div class="inputbox">
+                    <p>We will get back to you as soon as possible</p>
+                    <input type="submit" name="Shoot" value="Shoot">
+                </div>
+            </form>
+            <!-- Letter animation  -->
+            <div id="letter-animation"
+                style="display:none; position:fixed; left:50%; bottom:80px; z-index:9999; pointer-events:none;">
+                <img src="img/letter.png" alt="Letter" style="width:60px; height:auto; display:block;">
+            </div>
+        </div>
+        <style>
+            @keyframes shoot-letter {
+                0% {
+                    transform: translate(-50%, 0) scale(1) rotate(-10deg);
+                    opacity: 1;
+                }
+
+                60% {
+                    transform: translate(-50%, -300px) scale(1.1) rotate(5deg);
+                    opacity: 1;
+                }
+
+                80% {
+                    transform: translate(-50%, -500px) scale(1.2) rotate(-8deg);
+                    opacity: 0.8;
+                }
+
+                100% {
+                    transform: translate(-50%, -900px) scale(1.3) rotate(12deg);
+                    opacity: 0;
+                }
+            }
+
+            #letter-animation.animated {
+                animation: shoot-letter 5s cubic-bezier(.4, 1.6, .6, 1) forwards;
+            }
+        </style>
+        <script>
+            // Animation 
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                const letter = document.getElementById('letter-animation');
+                letter.style.display = 'block';
+                letter.classList.add('animated');
+                setTimeout(() => {
+                    letter.classList.remove('animated');
+                    letter.style.display = 'none';
+
+
+                    const email = document.getElementById('contact-email').value;
+                    if (email) {
+                        alert('Thank you for contacting us! Our support team will reach out to you through ' + email + ' within 24 hours.');
+                        document.getElementById('contact-form').reset();
+                    } else {
+                        alert('Please enter your email address.');
+                    }
+                }, 1000);
+            });
+        </script>
+    </div>
+
+
+    <!--Footter-->
+    <footer>
+        <div class="info">
+            <a href="#" class="logo">Game<span class="g3r-gradient">3</span>R</a>
+            <p>© 2023 Game3R. All rights reserved.</p>
+            <ul>
+                <li><a href="#"><i class='bxl  bx-facebook-square' style='color:#ffffff'></i> </a></li>
+                <li><a href="#"> <i class='bxl  bx-discord-alt' style='color:#ffffff'></i> </a></li>
+                <li><a href="#"> <i class='bxl  bx-twitter-x' style='color:#ffffff'></i> </a></li>
+                <li><a href="#"> <i class='bxl  bx-twitch' style='color:#ffffff'></i> </a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script>
+        /*sticky nav*/
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        /*toggle menu*/
+        function toggleMenu() {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+        document.querySelectorAll('.nav li a').forEach(link => {
+            link.addEventListener('click', function () {
+                
+                if (window.innerWidth <= 991) {
+                    const nav = document.querySelector('.nav');
+                    const toggleMenu = document.querySelector('.toggleMenu');
+                    nav.classList.remove('active');
+                    toggleMenu.classList.remove('active');
+                }
+            });
+        });
+
+
+        /*filter cards*/
+        let list = document.querySelectorAll('.list');
+        let card = document.querySelectorAll('.card');
+
+        for (let i = 0; i < list.length; i++) {
+            list[i].addEventListener('click', function () {
+                for (let j = 0; j < list.length; j++) {
+                    list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+                let dataFilter = this.getAttribute('data-filter');
+
+                for (let k = 0; k < card.length; k++) {
+                    card[k].classList.remove('active');
+                    card[k].classList.add('hide');
+
+                    if (card[k].getAttribute('data-item') == dataFilter || dataFilter == 'All') {
+                        card[k].classList.remove('hide');
+                        card[k].classList.add('active');
+                    }
+                }
+            })
+
+        }
+        /* Game search functionality*/
+        document.getElementById('game-search').addEventListener('input', function () {
+
+            const gamesSection = document.getElementById('Games');
+            if (gamesSection) {
+                gamesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            const query = this.value.toLowerCase();
+            const cards = document.querySelectorAll('.games .cardbox .card');
+            cards.forEach(card => {
+                const titleElem = card.querySelector('h4');
+                if (!titleElem) {
+                    card.style.display = 'none';
+                    return;
+                }
+                const title = titleElem.textContent.toLowerCase();
+                if (title.includes(query)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        /*random progress line(price ekata)*/
+        document.querySelectorAll('.games .cardbox .card').forEach(card => {
+            const priceElem = card.querySelector('.info p span');
+            const progressSpan = card.querySelector('.progress-line span');
+            if (priceElem && progressSpan) {
+                let priceText = priceElem.textContent.trim();
+                let percent = 80;
+                if (priceText.toLowerCase() === "free") {
+                    percent = 100;
+                } else {
+
+                    let price = parseFloat(priceText.replace(/[^0-9.]/g, ""));
+
+                    if (!isNaN(price)) {
+                        percent = Math.max(30, 100 - Math.round((price / 60) * 70));
+                    }
+                }
+                progressSpan.style.width = percent + "%";
+            }
+        });
+        // Toggle dropdown on profile
+        document.querySelectorAll('.profile-section').forEach(section => {
+            section.addEventListener('click', function (e) {
+                e.stopPropagation();
+                this.classList.toggle('active');
+            });
+        });
+
+        // Close dropdown 
+        document.addEventListener('click', function (e) {
+            document.querySelectorAll('.profile-section.active').forEach(section => {
+                section.classList.remove('active');
+            });
+        });
+
+        // Close page when clicking Logout
+        document.querySelectorAll('.profile-dropdown ul li a').forEach(link => {
+            if (link.textContent.trim().toLowerCase().includes('logout')) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    window.location.href = "login.html";
+                });
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>

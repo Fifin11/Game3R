@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Game3R</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-page-bg">
+        <div class="login-container themed">
+            <a  class="logo" style="text-align:center;display:block;margin-bottom:18px;">Game<span class="g3r-gradient">3</span>R</a>
+            <form id="login-form" class="login-form themed">
+                <h2>Login</h2>
+                <div id="login-error" style="color:#ff4d4f;text-align:center;display:none;margin-bottom:10px;"></div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                
+                <div style="margin:8px 0 16px 0;display: flex;">
+                    <input type="checkbox" id="show-password">
+                    <label for="show-password" style="font-size:0.95em;cursor:pointer;">Show Password</label>
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value;
+            const errorDiv = document.getElementById('login-error');
+            if (username === "hi" && password === "1234") {
+                window.location.href = "home.html";
+            } else {
+                errorDiv.textContent = "Invalid username or password.";
+                errorDiv.style.display = "block";
+            }
+            
+        });
+
+        document.getElementById('show-password').addEventListener('change', function() {
+            const pwdInput = document.getElementById('password');
+            pwdInput.type = this.checked ? 'text' : 'password';
+        });
+    </script>
+</body>
+</html>
